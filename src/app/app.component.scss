@@ -1,0 +1,19 @@
+:host {
+  background-color: darkgray;
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  app-weather-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+}

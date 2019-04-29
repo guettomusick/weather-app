@@ -1,0 +1,23 @@
+<div class="header-container">
+  <div class="logo">
+    <img src="./assets/logo.png">
+  </div>
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="zip-input">
+    <input name="zipcode"
+      placeholder="Enter ZipCode"
+      (ngModelChange)="onZipChange($event)"
+      [textMask]="{ mask: zipCodeMask }"
+      ngModel
+      type="text">
+    <input name="time-type"
+      id="time-type"
+      class="tgl tgl-skewed"
+      type="checkbox"
+      ngModel
+      (ngModelChange)="onTimeTypeChange($event)">
+    <label class="tgl-btn" data-tg-off="UTC" data-tg-on="ZIP" for="time-type" title="Change between UTC and Zip Code Local time"></label>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container" *ngIf="!loading; else loadingTemplate">
+  <div class="warning-box" *ngIf="!data">
+    Please enter a valid Zip Code to check the Weather.
+  </div>
+  <div class="warning-box" *ngIf="data?.forecasts.length === 0">
+    No information available for that Zip Code, please try another one.
+  </div>
+  <div class="forecast-list" *ngIf="data?.forecasts.length">
+    <h1>Weather Forecast for {{ data.city }}</h1>
+    <app-weather *ngFor="let forecast of data.forecasts" [data]="forecast" [usedTz]="usedTz"></app-weather>
+  </div>
+</div>
+<ng-template #loadingTemplate>
+  <div class="loader"><div></div></div>
+</ng-template>

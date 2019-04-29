@@ -1,0 +1,37 @@
+.forecast-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    &.col-100 {
+      min-width: 100px;
+    }
+    &.col-150 {
+      min-width: 150px;
+    }
+    &.col-300 {
+      min-width: 300px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px;
+  }
+  .time {
+    min-width: 70px;
+  }
+  .temp, .humidity {
+    background-color: #8F8D88;
+    padding: 3px 7px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 5px;
+  }
+}
