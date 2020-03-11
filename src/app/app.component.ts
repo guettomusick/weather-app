@@ -14,6 +14,8 @@ export class AppComponent {
   loading = false;
   useTz = false;
   usedTz = 'Etc/UTC';
+  undefinedAttribute;
+  undefinedAttributeTyped: string;
 
   constructor(private weatherForecast: WeatherForecastService) {}
 
@@ -41,5 +43,15 @@ export class AppComponent {
     if (useTz && this.forecastData) {
       this.usedTz = this.forecastData.tz.timeZoneId;
     }
+  }
+  
+  someMethod() {
+    let undefinedVariable;
+    let undefinedVariableTyped: string;
+    
+    console.log(this.undefinedAttribute.length);
+    console.log(this.undefinedAttributeTyped.length);
+    console.log(undefinedVariable.length);
+    console.log(undefinedVariableTyped.length);
   }
 }
