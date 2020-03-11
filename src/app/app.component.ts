@@ -53,5 +53,9 @@ export class AppComponent {
     console.log(this.undefinedAttributeTyped.length);
     console.log(undefinedVariable.length);
     console.log(undefinedVariableTyped.length);
+    this.undefinedAttribute = undefined;
+    this.undefinedAttributeTyped = undefined;
+    undefinedVariable = undefined;
+    undefinedVariableTyped = undefined;
   }
 }
