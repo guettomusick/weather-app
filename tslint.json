@@ -69,7 +69,6 @@
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,
-    "strict": true,
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
